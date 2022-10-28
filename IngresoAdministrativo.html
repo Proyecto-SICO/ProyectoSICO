@@ -1,61 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IngresoAdministrativo</title>
-    <!-- Bootstrap CSS v5.0.2 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <!-- cdn icnonos-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Ingreso Administrativo</title>
 </head>
-<div class="align-self-auto">
-    <img src="imagenes/Logo SICO.PNG" width="150px">
-</div>
-<center>
-    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-person-circle"
-        viewbox="0 0 16 16">
-        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-        <path fill-rule="evenodd"
-            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-    </svg>
-    <div class="col-md-4">
-        <div class="card">
-            <form class="p-4" method="POST" action="registrar.php">
-                <div class="mb-3">
-                    <label class="form-label">Usuario </label>
-                    <input type="text" class="form-control" placeholder="Correo institucional" name="txtnombre"
-                        autofocus required>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Contraseña</label>
-                    <input type="text" class="form-control" placeholder="Contraseña" name="txtcantidad" autofocus
-                        required>
-                </div>
-                <br>
-                <div class="d-grid">
-                    <input type="hidden" name="oculto" value="1">
-                    <input type="submit" value="Olvido de contraseña">
-                </div>
-                <br>
-                <left>
-                    <div class="d-grid">
-                        <input type="hidden" name="oculto" value="1">
-                        <input type="submit" class="btn btn-primary" value="Enviar">
-                    </div>
-                </left>
-                <br>
-                <div class="d-grid">
-                    <input type="hidden" name="oculto" value="1">
-                    <input type="submit" class="btn btn-primary" value="Registrar">
-                </div>
-            </form>
+
+<body>
+    <div class="container-fluid vh-100">
+        <header class="navbar navbar-light navbar-expand-sm">
+            <nav class="container-fluid fkex-sm-nowrap" aria-label="Main navigation">
+                <a class="navbar-brand p-0 me-2" href="#" aria-label="SICO"><img src="imagenes/Logo SICO.png" alt="logo"
+                        width="150px" height="80px"></a>
+            </nav>
+        </header>
+
+        <div class="d-flex d-flex-colum justify-content-center align-items-center">
+            <i class="bi bi-person-circle" style="font-size: 50px;"></i>
         </div>
+        <div class="d-flex d-flex-colum justify-content-center align-items-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <form class="p-4" method="POST" action="registrar.php">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Correo Institucional" name="txtnombre"
+                                autofocus required>
+                        </div>
+                        <div class="mb-2">
+                            <input type="text" class="form-control" placeholder="Password" name="txtcantidad" autofocus
+                                required>
+                        </div>
+                        <div class="d-grid m-auto p-1">
+                            <input type="hidden" name="oculto" value="1">
+                            <input type="submit" value="Olvido de contraseña">
+                        </div>
+                        <left>
+                            <div class="d-grid m-auto p-1">
+                                <input type="hidden" name="oculto" value="1">
+                                <input type="submit" class="btn btn-primary" value="Enviar">
+                            </div>
+                        </left>
+                        <div class="d-grid m-auto p-1">
+                            <input type="hidden" name="oculto" value="1">
+                            <input type="submit" class="btn btn-primary" value="Registrar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container-fluid border-bottom fixed-bottom">
+                <div class="row p-2">
+                    <a class="text-dark text-center" style="background-color: rgba(0, 0, 0, 0.2) "
+                        href="https://SICO/">© 2022 Copyright: Todos los derechos Reservados-SICO.com</a>
+                </div>
+                <div class="b-example-divider m-1"></div>
+            </div>
+        </footer>
+
     </div>
-</center>
+</body>
 
 </html>
