@@ -5,10 +5,275 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet d-inline" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>Asignador</title>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container-fluid">
+            <a href="Index.html">
+                <img src="imagenes/Logo SICO.PNG" alt="logo" width="150px">
+                <!--<img class="d-inline-block align-top" src="/imagenes/Logo SICO.PNG" width="200" height="85" alt="logo">-->
+            </a>
+            <div class="text-center">
+                <i class="bi bi-person-circle" style="font-size: 50px;"></i>
+                <h6>Asignador</h6>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-sm-3 col-xl-2 px-2 px-0 bg-secondary vh-95">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white">
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                        id="menu">
+                        <li class="nav-item"><a href="Administrador.html" class="nav-link align-middle px-0 text-dark">
+                                <i class="bi bi-people-fill"></i> <span
+                                    class="ms-1 d-none d-sm-inline text-white-active">Usuarios</span></a></li>
+                        <li><a href="Solicitudes.html" class="nav-link px-0 align-middle text-dark">
+                                <i class="bi bi-check-lg"></i><span
+                                    class="ms-1 d-none d-sm-inline text-white">Solicitudes</span></a></li>
+                        <li><a href="Reportes.html" class="nav-link px-0 align-middle text-dark">
+                                <i class="bi bi-bar-chart-line-fill"></i> <span
+                                    class="ms-1 d-none d-sm-inline text-white">Cupos Disponibles</span></a></li>
+                        <li><a href="Alertas.html" class="nav-link px-0 align-middle text-dark">
+                                <i class="bi bi-exclamation-triangle-fill"></i> <span
+                                    class="ms-1 d-none d-sm-inline text-white">Alertas</span></a></li>
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="col py-3">
+                <h3>Usuarios</h3>
+                <div class="container">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item-active"><a href="#!" class="page-link"></a>Ant</li>
+                        <li class="page-item"><a href="#!" class="page-link"></a>1</li>
+                        <li class="page-item"><a href="#!" class="page-link"></a>2</li>
+                        <li class="page-item"><a href="#!" class="page-link"></a>Últ</li>
+                    </ul>
+                </div>
+                <p class="lead">
+                <table class="table table-hover table-striped table-bordered table-responsive-sm">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nombre1</th>
+                            <th>Nombre2</th>
+                            <th>Apellido1</th>
+                            <th>Apellido2</th>
+                            <th>Tipo Id</th>
+                            <th>Fecha Ingreso</th>
+                            <th>Localidad</th>
+                            <th>dirección</th>
+                            <th>Teléfono1</th>
+                            <th>Teléfono2</th>
+                            <th>E-mail</th>
+                            <th>Perfil</th>
+                            <th>Aceptar(Si-No)</th>
+                            <th>Mensaje</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Pedro</td>
+                            <td>-</td>
+                            <td>Melendez</td>
+                            <td>Ruiz</td>
+                            <td>CC</td>
+                            <td>10/09/2018</td>
+                            <td>Suba</td>
+                            <td>Calle 185 N° 127-32</td>
+                            <td>6015468956</td>
+                            <td>3156895645</td>
+                            <td>pmruiz@gmail.com</td>
+                            <td>Solicitante</td>
+                            <td>Si</td>
+                            <td>Ok</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Luisa</td>
+                            <td>María</td>
+                            <td>Torres</td>
+                            <td>León</td>
+                            <td>CC</td>
+                            <td>15/07/2022</td>
+                            <td>Bosa</td>
+                            <td>Calle 95 Sur N° 87 - 32</td>
+                            <td>6017895645</td>
+                            <td>3054895621</td>
+                            <td>lmtl@hotmail.com</td>
+                            <td>Solicitante</td>
+                            <td>No</td>
+                            <td>Ok</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Pedro</td>
+                            <td>-</td>
+                            <td>Melendez</td>
+                            <td>Ruiz</td>
+                            <td>CC</td>
+                            <td>10/09/2018</td>
+                            <td>Suba</td>
+                            <td>Calle 185 N° 127-32</td>
+                            <td>6015468956</td>
+                            <td>3156895645</td>
+                            <td>pmruiz@gmail.com</td>
+                            <td>Solicitante</td>
+                            <td>Si</td>
+                            <td>Ok</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Luisa</td>
+                            <td>María</td>
+                            <td>Torres</td>
+                            <td>León</td>
+                            <td>CC</td>
+                            <td>15/07/2022</td>
+                            <td>Bosa</td>
+                            <td>Calle 95 Sur N° 87 - 32</td>
+                            <td>6017895645</td>
+                            <td>3054895621</td>
+                            <td>lmtl@hotmail.com</td>
+                            <td>Solicitante</td>
+                            <td>No</td>
+                            <td>Ok</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Pedro</td>
+                            <td>-</td>
+                            <td>Melendez</td>
+                            <td>Ruiz</td>
+                            <td>CC</td>
+                            <td>10/09/2018</td>
+                            <td>Suba</td>
+                            <td>Calle 185 N° 127-32</td>
+                            <td>6015468956</td>
+                            <td>3156895645</td>
+                            <td>pmruiz@gmail.com</td>
+                            <td>Solicitante</td>
+                            <td>Si</td>
+                            <td>Ok</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Luisa</td>
+                            <td>María</td>
+                            <td>Torres</td>
+                            <td>León</td>
+                            <td>CC</td>
+                            <td>15/07/2022</td>
+                            <td>Bosa</td>
+                            <td>Calle 95 Sur N° 87 - 32</td>
+                            <td>6017895645</td>
+                            <td>3054895621</td>
+                            <td>lmtl@hotmail.com</td>
+                            <td>Solicitante</td>
+                            <td>No</td>
+                            <td>Ok</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Pedro</td>
+                            <td>-</td>
+                            <td>Melendez</td>
+                            <td>Ruiz</td>
+                            <td>CC</td>
+                            <td>10/09/2018</td>
+                            <td>Suba</td>
+                            <td>Calle 185 N° 127-32</td>
+                            <td>6015468956</td>
+                            <td>3156895645</td>
+                            <td>pmruiz@gmail.com</td>
+                            <td>Solicitante</td>
+                            <td>Si</td>
+                            <td>Ok</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Luisa</td>
+                            <td>María</td>
+                            <td>Torres</td>
+                            <td>León</td>
+                            <td>CC</td>
+                            <td>15/07/2022</td>
+                            <td>Bosa</td>
+                            <td>Calle 95 Sur N° 87 - 32</td>
+                            <td>6017895645</td>
+                            <td>3054895621</td>
+                            <td>lmtl@hotmail.com</td>
+                            <td>Solicitante</td>
+                            <td>No</td>
+                            <td>Ok</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Pedro</td>
+                            <td>-</td>
+                            <td>Melendez</td>
+                            <td>Ruiz</td>
+                            <td>CC</td>
+                            <td>10/09/2018</td>
+                            <td>Suba</td>
+                            <td>Calle 185 N° 127-32</td>
+                            <td>6015468956</td>
+                            <td>3156895645</td>
+                            <td>pmruiz@gmail.com</td>
+                            <td>Solicitante</td>
+                            <td>Si</td>
+                            <td>Ok</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Luisa</td>
+                            <td>María</td>
+                            <td>Torres</td>
+                            <td>León</td>
+                            <td>CC</td>
+                            <td>15/07/2022</td>
+                            <td>Bosa</td>
+                            <td>Calle 95 Sur N° 87 - 32</td>
+                            <td>6017895645</td>
+                            <td>3054895621</td>
+                            <td>lmtl@hotmail.com</td>
+                            <td>Solicitante</td>
+                            <td>No</td>
+                            <td>Ok</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </p>
+                <!-- <ul class="list-unstyled">
+                    <li>
+                        <h5>Responsive</h5> shrinks in width, hides text labels and collapses to icons only on mobile
+                    </li>
+                </ul> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- <footer>
+        <div class="container-fluid border-bottom fixed-bottom">
+            <div class="row">
+                <a class="text-dark text-center" style="background-color: rgba(0, 0, 0, 0.2) " href="https://SICO/">©
+                    2022 Copyright: Todos los derechos Reservados-SICO.com</a>
+            </div>
+            <div class="b-example-divider"></div>
+        </div>
+    </footer> -->
 
 </body>
 
