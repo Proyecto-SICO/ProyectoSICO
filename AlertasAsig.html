@@ -1,0 +1,106 @@
+<!dOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet d-inline" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Asignador</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container-fluid">
+            <a href="Index.html">
+                <img src="imagenes/Logo SICO.PNG" alt="logo" width="150px">
+                <!--<img class="d-inline-block align-top" src="/imagenes/Logo SICO.PNG" width="200" height="85" alt="logo">-->
+            </a>
+            <div class="text-center">
+                <i class="bi bi-person-circle" style="font-size: 50px;"></i>
+                <h6>Asignador</h6>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-sm-3 col-xl-2 px-2 px-0 bg-secondary vh-95">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white">
+                    <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                        id="menu">
+                        <li class="nav-item"><a href="Asignador.html" class="nav-link align-middle px-0 text-dark">
+                                <i class="bi bi-people-fill"></i> <span
+                                    class="ms-1 d-none d-sm-inline text-white">Usuarios</span></a></li>
+                        <li><a href="SolicitudesAsig.html" class="nav-link px-0 align-middle text-dark">
+                                <i class="bi bi-check-lg"></i><span
+                                    class="ms-1 d-none d-sm-inline text-white">Solicitudes</span></a></li>
+                        <li><a href="CuposDisponibles.html" class="nav-link px-0 align-middle text-dark">
+                                <i class="bi bi-bar-chart-line-fill"></i> <span
+                                    class="ms-1 d-none d-sm-inline text-white">Cupos Disponibles</span></a></li>
+                        <li><a href="AlertasAsig.html" class="nav-link px-0 align-middle text-dark">
+                                <i class="bi bi-exclamation-triangle-fill"></i> <span
+                                    class="ms-1 d-none d-sm-inline text-white-active">Alertas</span></a></li>
+                    </ul>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="col py-3">
+                <h3>Alertas</h3>
+                <br>
+                <h5>Solicitudes</h5>
+                <div class="container">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item-active"><a href="#!" class="page-link"></a>Ant</li>
+                        <li class="page-item"><a href="#!" class="page-link"></a>1</li>
+                        <li class="page-item"><a href="#!" class="page-link"></a>2</li>
+                        <li class="page-item"><a href="#!" class="page-link"></a>Últ</li>
+                    </ul>
+                </div>
+                <p class="lead">
+                <table class="table table-hover table-striped table-bordered table-responsive-sm">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th># Solicitud</th>
+                            <th>Tema</th>
+                            <th>Fecha Ingreso</th>
+                            <th>Horas</th>
+                            <th>>50H</th>
+                            <th>Enviar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td>AS258689</td>
+                            <td>Cupos escolares</td>
+                            <td>25/10/2022</td>
+                            <td>60</td>
+                            <td class="text-danger">Alerta</td>
+                            <td>Botón</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>AS5689589</td>
+                            <td>Traslado escolar</td>
+                            <td>17/10/2022</td>
+                            <td>58</td>
+                            <td class="text-danger">Alerta</td>
+                            <td>Botón</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
